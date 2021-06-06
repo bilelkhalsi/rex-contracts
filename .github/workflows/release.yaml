@@ -1,0 +1,33 @@
+  
+name: publish-release
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+
+  publish-release:
+
+    runs-on: ubuntu-latest
+          
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build
+
+      - uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: publish
+        env:
+          RELEASE_NAME: ${{ github.event.release.name }}
+          GIT_REPO_URL: ${{ github.event.repository.html_url }}
+          WEB3_INFURA_PROJECT_ID:  ${{ secrets.WEB3_INFURA_PROJECT_ID }}
+          WEB3_INFURA_PROJECT_MNEMONIC: ${{ secrets.WEB3_INFURA_PROJECT_MNEMONIC }}

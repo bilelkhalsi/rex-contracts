@@ -12,10 +12,12 @@
     "build": "truffle compile",
     "migrate:dev": "truffle migrate develpement",
     "test": "truffle test",
+    "publish": "truffle publish",
     "test:ci": "truffle test --network ci",
     "migrate:ci": "truffle migrate --network ci"
   },
   "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
     "ganache-cli": "^6.12.2",
     "truffle": "^5.3.8"
   }

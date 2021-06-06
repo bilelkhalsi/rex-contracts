@@ -1,0 +1,15 @@
+{
+    "package_name": "rex-contracts",
+    "version": "1.0.0",
+    "description": "REX Smart Contracts",
+    "authors": [
+      "bilelkhalsi <bilel_khalsi@live.fr>"
+    ],
+    "keywords": [
+      "ethereum",
+      "rex",
+      "ipfs",
+      "solidity"
+    ],
+    "license": "MIT"
+  }
