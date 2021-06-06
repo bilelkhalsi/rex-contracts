@@ -1,0 +1,22 @@
+{
+  "name": "rex-contracts",
+  "version": "1.0.0",
+  "description": "REX Smart Contracts",
+  "main": "index.js",
+  "repository": "git@github.com:bilelkhalsi/rex-contracts",
+  "author": "bilelkhalsi <bilel_khalsi@live.fr>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "ganache-cli",
+    "build": "truffle compile",
+    "migrate:dev": "truffle migrate develpement",
+    "test": "truffle test",
+    "test:ci": "truffle test --network ci",
+    "migrate:ci": "truffle migrate --network ci"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.3.8"
+  }
+}
