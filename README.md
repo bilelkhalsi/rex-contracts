@@ -1,12 +1,12 @@
 # *REX* Smart Contracts
 
-[![](https://github.com/bilelkhalsi/istio-action/workflows/rex-contracts/badge.svg?branch=main)](https://github.com/bilelkhalsi/rex-contract/actions)
+[![](https://github.com/bilelkhalsi/rex-contracts/workflows/rex-contracts/badge.svg?branch=main)](https://github.com/bilelkhalsi/rex-contracts/actions)
 
 
 # REX-CONTRACTS
 
-This project hold smart contract built using solidity & truffle suite.
-Smart contracts in this project are built on the following Solidity verion : 
+This project hold smart contracts built using solidity & truffle suite.
+Smart contracts in this project are built on the following Solidity version : 
 
 ```
 pragma solidity ^0.8.4;
