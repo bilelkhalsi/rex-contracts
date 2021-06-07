@@ -27,7 +27,7 @@ jobs:
         with:
           cmd: publish
           auth-token: ${{ secrets.NODE_AUTH_TOKEN }}
-          registry-url: https://registry.npmjs.org/
+          registry-url: registry.npmjs.org
         env:
           RELEASE_NAME: ${{ github.event.release.name }}
           GIT_REPO_URL: ${{ github.event.repository.html_url }}
